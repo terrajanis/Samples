@@ -4,6 +4,8 @@
     <bytecodeTargetLevel>
       <module name="InputOutput.main" target="1.8" />
       <module name="InputOutput.test" target="1.8" />
+      <module name="Samples.main" target="1.8" />
+      <module name="Samples.test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

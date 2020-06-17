@@ -3,8 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/InputOutput.iml" filepath="$PROJECT_DIR$/.idea/modules/InputOutput.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/InputOutput.main.iml" filepath="$PROJECT_DIR$/.idea/modules/InputOutput.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/InputOutput.test.iml" filepath="$PROJECT_DIR$/.idea/modules/InputOutput.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Samples.iml" filepath="$PROJECT_DIR$/.idea/modules/Samples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Samples.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Samples.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Samples.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Samples.test.iml" />
     </modules>
   </component>
 </project>
