@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.InputStreamReader;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class TreeMapIO {
     public static void main(String[] args) throws Exception {
@@ -9,7 +10,7 @@ public class TreeMapIO {
 
         FileInputStream inputStream = new FileInputStream(reader.readLine());
 
-        java.util.TreeMap<Integer, Integer> map = new java.util.TreeMap<>();
+        TreeMap<Integer, Integer> map = new TreeMap<>();
 
         while (inputStream.available() > 0) {
             int read = inputStream.read();
