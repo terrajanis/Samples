@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.TreeMap;
 
 public class SortingByDigits {
@@ -36,8 +37,31 @@ public class SortingByDigits {
         return result;
     }
 
+    public static String getDialString(String phone) {
+        char[] symbols = phone.toCharArray();
+        ArrayList<String> correctSymbols = new ArrayList<>();
+        for (int i = 0; i < symbols.length; i++) {
+            if(symbols[i] != '(' && symbols[i] != '-' && symbols[i] != ')') {
+                correctSymbols.add(Character.toString(symbols[i]));
+            }
+        }
+
+        StringBuilder strbul = new StringBuilder();
+        for(String str : correctSymbols)
+        {
+            strbul.append(str);
+        }
+
+        String str = strbul.toString();
+        String phoneNumber = "callto://" + str;
+        return phoneNumber;
+    }
+
     public static void main (String[] args) {
         String result = order("is2 Thi1s T4est 3a");
         System.out.println(result);
+
+        String phone = getDialString("+38(050)123-45-67");
+        System.out.println(phone);
     }
 }
