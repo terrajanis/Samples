@@ -57,11 +57,25 @@ public class SortingByDigits {
         return phoneNumber;
     }
 
+    public static String reverseWords(final String original)
+    {
+        StringBuilder str = new StringBuilder(original);
+        String[] words = str.reverse().toString().split(" ");
+        StringBuilder newStr = new StringBuilder();
+        for (int i = words.length - 1; i >= 0; i--) {
+            newStr.append(words[i]).append(" ");
+        }
+        return newStr.toString().trim();
+    }
+
     public static void main (String[] args) {
         String result = order("is2 Thi1s T4est 3a");
         System.out.println(result);
 
         String phone = getDialString("+38(050)123-45-67");
         System.out.println(phone);
+
+        String string = reverseWords("elbuod  decaps  sdrow");
+        System.out.println(string);
     }
 }
